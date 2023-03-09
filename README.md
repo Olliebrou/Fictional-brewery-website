@@ -1,7 +1,7 @@
 # Fictional-brewery-website
 A Django web app for a fictional Brewery 
 
-# Instalation
+# Installation
 
 This project uses Python, DJango, and an IDE to work.
 If you do not have Python, you can download it here: https://www.python.org/downloads/
