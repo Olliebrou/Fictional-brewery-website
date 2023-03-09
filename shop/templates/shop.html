@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+<div class="container bg-faded">
+    <div class = "card-deck align-items-center">
+        {% for beer in object_list %}
+            <div class="card" style=" margin: 10px;">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <img class="card-img-top" style="object-fit:contain; max-width: 100%; height: 600px;" src="{{ beer.image.url }}" alt="{{ beer.beer_name }}">
+                    </div>
+                        <div class="col-md-2">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ beer.beer_name }}</h4>
+                                <p class="card-text">Price: R{{ beer.price }}</p>
+                                <a href="/shop/{{beer.id}}" class="btn btn-primary streched-link">View Details</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+
+
+

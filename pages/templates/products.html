@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Products{% endblock %}
+{% block content %}
+{% load static %}
+<section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title">
+                    <div class="d-flex me-auto bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-0"><span class="section-heading-upper">brewedto Perfection</span><span class="section-heading-lower">craft beers</span></h2>
+                    </div>
+                </div><img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{% static 'assets/img/beer4.jpg' %}">
+                <div class="bg-faded p-5 rounded">
+                    <p class="mb-0">What sets our beers apart is our unwavering commitment to quality, creativity, and innovation.<br>Our expert brewers are constantly experimenting with new ingredients and brewing methods to push the boundaries of traditional brewing and create unique and exciting flavors. We pride ourselves on being at the forefront of the craft beer industry, and we are committed to constantly evolving and improving to stay ahead of the curve. At our brewery, you can expect to find bold and delicious beers that are unlike anything you've tasted before.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title">
+                    <div class="d-flex ms-auto bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-0"><span class="section-heading-upper">something different</span><span class="section-heading-lower">seasonal&nbsp; beers</span></h2>
+                    </div>
+                </div><img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{% static 'assets/img/beer1.jpg' %}">
+                <div class="bg-faded p-5 rounded">
+                    <p class="mb-0">At our brewery, we love to celebrate the changing seasons with our special lineup of seasonal beers. Each season brings a new opportunity to experiment with different ingredients and brewing techniques, resulting in a unique and exciting range of flavors and styles. From crisp and refreshing summer ales to rich and hearty winter stouts, our seasonal beers are crafted with care and attention to detail.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title">
+                    <div class="d-flex mx-auto bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-0"><span class="section-heading-upper">our ingredients</span><span class="section-heading-lower">fresh, local, flavourful</span></h2>
+                    </div>
+                </div><img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{% static 'assets/img/malt.jpg' %}">
+                <div class="bg-faded p-5 rounded">
+                    <p class="mb-0">At our brewery, we take great care in selecting only the finest ingredients for our beers. We believe that the quality of our ingredients is crucial to creating beers that are truly exceptional. We source our ingredients from local farmers and suppliers who share our commitment to quality and sustainability. We work closely with our suppliers to ensure that we always have access to the freshest and highest quality ingredients available. Our expert brewers are passionate about their craft and have years of experience working with a variety of ingredients, enabling them to create beers that are perfectly balanced and full of flavor.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

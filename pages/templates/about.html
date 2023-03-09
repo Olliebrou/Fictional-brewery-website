@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+{% load static %}
+<section class="page-section about-heading">
+        <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'assets/img/brewery.jpg' %}">
+            <div class="about-heading-content">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-9 mx-auto">
+                        <div class="bg-faded rounded p-5">
+                            <h2 class="section-heading mb-4"><span class="section-heading-upper">Great atmosphere, great people</span><span class="section-heading-lower">&nbsp;About Our brewery</span></h2>
+                            <p>Our brewery is more than just a place to enjoy delicious beer. It's a community of like-minded individuals who share a passion for great beer, good food, and good times. We believe in creating a warm and welcoming atmosphere that encourages conversation, camaraderie, and connections. Our brewery is a place where you can come to relax, unwind, and enjoy the company of friends and family. We offer a wide variety of beers, from classic styles to bold and experimental brews, as well as a menu of delicious food and snacks to complement your beer. Our space is designed with your comfort and enjoyment in mind, featuring a cozy taproom, spacious outdoor patio, and a range of events and activities to keep you entertained.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

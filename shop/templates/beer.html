@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{beer.beer_name}}{% endblock %}
+{% block content %}
+<div class="container d-flex justify-content-center mx-auto bg-faded">
+    <h2 class="card-title">{{ beer.beer_name }}</h2>
+    <hr>
+    <div class="card" style="width:450px, height:auto,">
+        <img class="card-img-top" style="position: absolute, max-width: 100%, height: auto" src="{{ beer.image.url }}" alt="{{ beer.beer_name }}">
+        <div class="card-body">
+            <p class="card-text">{{ beer.desc }}</p>
+            <p class="card-text">ABV: {{ beer.abv }}%</p>
+            <p class="card-text">IBU: {{ beer.ibu }}</p>
+            <p class="card-text">Style: {{ beer.style }}</p>
+            <p class="card-text">Price: R{{ beer.price }}</p>
+        </div>
+    </div>
+</div>
+<a class="btn btn-warning" href="{% url 'pages:visit' %}">Come try it!</a>
+{% endblock %}

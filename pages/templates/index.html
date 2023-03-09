@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+{% load static %}
+<section class="page-section clearfix">
+        <div class="container">
+            <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="{% static 'assets/img/beer2.jpg' %}">
+                <div class="text-center intro-text p-5 rounded bg-faded">
+                    <h2 class="section-heading mb-4"><span class="section-heading-upper">Good beer</span><span class="section-heading-lower">Worth Drinking</span></h2>
+                    <p class="mb-3">At our brewery, we believe that every sip of our beer should be a memorable experience, and we strive to achieve this with every brew we produce. So come and raise a glass with us, and taste for yourself why our beer is worth drinking.<br></p>
+                    <div class="mx-auto intro-button"><a class="btn btn-primary d-inline-block mx-auto btn-xl" role="button" href="#">Visit Us Today!</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="text-center cta-inner rounded">
+                        <h2 class="section-heading mb-4"><span class="section-heading-upper">What makes us</span><span class="section-heading-lower">special</span></h2>
+                        <p class="mb-0"><br>As a brewery, what makes us special is our passion for creating unique and high-quality craft beers that push the boundaries of traditional brewing techniques. We believe in using only the finest ingredients sourced from local farmers and suppliers to create a diverse range of flavors and styles that cater to all tastes. We take great pride in our brewing process, which combines traditional methods with innovative approaches, resulting in beers that are not only delicious but also showcase the creativity and skill of our brewers. Additionally, we place a strong emphasis on sustainability and minimizing our environmental impact by using renewable energy and reducing waste.<br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

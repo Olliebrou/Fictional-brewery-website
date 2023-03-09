@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+</head>
+
+<body style="background: url(&quot;{% static 'assets/img/background.png' %}&quot;);background-size: contain;"><img class="rounded-circle d-flex m-auto" src="{% static 'assets/img/logo.png' %}" style="width: 200px;">
+    <section class="py-4 py-xl-5">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-content-center align-self-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center" style="background: var(--bs-white);width: 395px;margin-bottom: 0px;padding-bottom: 21px;padding-top: 13px;">
+                    <div class="text-center d-block" style="transform-origin: center;">
+                        <h2 class="text-uppercase fw-bold d-flex align-self-center mx-auto mb-3">YOU Must be 18 to enter</h2>
+                        <p class="text-center mb-4">Please login or sign up to enter.&nbsp;</p><a class="btn btn-primary fs-5 me-2 py-2 px-4" role="button" href="{% url 'user_auth:login' %}">Login</a><a class="btn btn-outline-primary fs-5 py-2 px-4" role="button" href="{% url 'user_auth:register' %}">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
