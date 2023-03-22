@@ -4,6 +4,30 @@ from django.db import models
 
 
 class Beer(models.Model):
+    """
+            A Django model representing a beer product object.
+
+            :param beer_name: Name of the beer, up to 50 characters.
+            :type beer_name: str
+            :param abv: Alcohol by volume percentage of the beer.
+            :type abv: float
+            :param ibu: International Bitterness Units of the beer.
+            :type ibu: int
+            :param style: Style of the beer, up to 100 characters.
+            :type style: str
+            :param price: Price of the beer in Rands.
+            :type price: int, optional
+            :param desc: Description of the beer.
+            :type desc: str, optional
+            :param image: Image of the beer.
+            :type image: str, optional
+
+            :return: A Beer object.
+            :rtype: Beer
+
+            :Methods:
+                `__str__(self):` Returns the name of the beer as a string.
+            """
     beer_name = models.CharField(max_length=50)
     abv = models.FloatField()
     ibu = models.IntegerField()
