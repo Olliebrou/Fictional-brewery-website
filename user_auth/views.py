@@ -6,6 +6,21 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 def register(request):
+    """
+    View function for registering a new user.
+
+    If the request method is POST, the function will validate the form and
+    create a new user if the form is valid. The user will then be authenticated
+    and redirected to the home page. If the request method is not POST, the
+    function will display the registration form.
+
+    :param request: The HTTP request object.
+    :type request: HttpRequest
+
+    :return: The rendered HTML template for the registration page, along with the registration form.
+    :rtype: HttpResponse
+
+    """
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
@@ -25,6 +40,17 @@ def register(request):
 
 
 def login_view(request):
+    """
+    View function for handling user login.
+    If the request method is POST, validate the form data and log in the user if
+    the credentials are valid. Otherwise, display the login form.
+
+    :param request: The HTTP request object.
+    :type request: HttpRequest
+    :return: The HTTP response object.
+    :rtype: HttpResponse
+
+    """
     if request.method == 'POST':
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
